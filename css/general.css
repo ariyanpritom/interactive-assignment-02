@@ -1,0 +1,273 @@
+/* 
+COLOR
+    color -> #06c167
+    color -> #1d1d1f
+    background-color -> #fff
+    background-color -> #f3fcf7
+    background-color -> #f3fafb
+
+FONT
+    font-family -> "Inter", sans-serif
+*/
+
+/* ************************************************ */
+/* GENERAL COMPONENTS */
+/* ************************************************ */
+
+*,
+*:focus,
+*::before,
+*::after {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*  (10px / 16px) * 100 = 62.5% */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #1d1d1f;
+  background-color: #fff;
+}
+
+/* ************************************************ */
+/* GENERAL REUSABLE COMPONENTS */
+/* ************************************************ */
+
+.container {
+  max-width: 125rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* GRID COMPONENT*/
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid-custom {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+/* HEADING COMPONENT */
+.heading-primary {
+  font-size: 7.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  transition: all 0.3s;
+}
+
+.heading-primary:hover {
+  transform: translateY(-6.5%);
+}
+
+.heading-secondary {
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  transition: all 0.3s;
+}
+.heading-secondary:hover {
+  transform: translateY(-6.5%);
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.heading-quaternary {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: all 0.3s;
+}
+
+.heading-quaternary:hover {
+  color: #06c167;
+}
+
+.subheading {
+  display: block;
+  font-style: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.75px;
+  transition: all 0.3s;
+}
+
+.subheading:hover {
+  color: #06c167;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.list-item {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  max-width: 2.4rem;
+  height: auto;
+}
+
+/* LINK */
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BUTTON */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 2.3rem 3.2rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  transform: skew(-0.02turn, -2deg);
+}
+
+.btn-sm,
+.btn-sm:link,
+.btn-sm:visited {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: #e6f9f0;
+  transition: all 0.3s;
+}
+
+.btn-sm:hover,
+.btn:active {
+  transform: skew(-0.02turn, -2deg);
+}
+
+.btn-md,
+.btn-md:link,
+.btn-md:visited {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.4rem 2.8rem;
+  cursor: pointer;
+  border: none;
+  background-color: #e6f9f0;
+  transition: all 0.3s;
+}
+
+.btn-md:hover,
+.btn:active {
+  transform: skew(-0.02turn, -2deg);
+}
+
+.btn--full,
+.btn--full:link,
+.btn--full:visited {
+  background-color: #06c167;
+  color: #fff;
+}
+
+.btn--outline,
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #06c167;
+  border: 0.2rem solid #06c167;
+}
+
+.btn-iB {
+  display: inline-block;
+}
+
+/* HELPER CLASSES */
+
+.margin-top-big {
+  margin-top: 15.8rem !important;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2.8rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-big {
+  margin-bottom: 6.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.content-pd-sm {
+  padding: 4.6rem 0;
+}
+
+.content-pd-md {
+  padding: 7rem 0;
+}

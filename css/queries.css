@@ -1,0 +1,438 @@
+/* 1230 */
+/* 1100 */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 69em) {
+  .brand {
+    padding: 3.5rem 0;
+  }
+  .brand-selection {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 4.6rem;
+  }
+  .brand-icon:nth-child(2) {
+    justify-self: end;
+  }
+  .brand-icon:last-child {
+    grid-column: span 2;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 68em) {
+  /* 8px / 16px = 0.5 = 50% */
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 59.5em) {
+  .product-manage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-box {
+    padding: 2.5rem 1.5rem;
+  }
+  .footer-manage {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 58em) {
+  .food-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 56.5em) {
+  .transport-dp {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+
+  .benefit-manage {
+    grid-template-columns: 1fr;
+  }
+  .stars-manage {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 53.5em) {
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+
+  .btn {
+    padding: 2rem 3rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+
+  .hero-img {
+    max-width: 85%;
+  }
+
+  .polca-img {
+    max-width: 90%;
+  }
+
+  .heading-secondary {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 46.5em) {
+  .brand-selection {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3.4rem;
+    row-gap: 2.6rem;
+  }
+
+  .brand-icon:last-child {
+    grid-column: none;
+  }
+}
+
+@media (max-width: 44em) {
+  .brand-selection {
+    padding: 4.6rem;
+  }
+  .food-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-manage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quality {
+    top: 35%;
+    right: -5%;
+  }
+
+  .rating {
+    top: 60%;
+    left: -18%;
+  }
+
+  .polca-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 38.5em) {
+  .header {
+    background-color: #f3fcf7;
+    height: 110rem;
+  }
+
+  .nav-list {
+    gap: 1.5rem;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .header-main {
+    padding-top: 5rem;
+  }
+
+  .hero-box {
+    position: relative;
+  }
+  .hero-img {
+    max-width: 70%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .polca-img {
+    max-width: 35%;
+    width: auto;
+    position: absolute;
+    bottom: -7%;
+    right: 10%;
+  }
+
+  .hero-point {
+    width: 23rem;
+    height: 5.3rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .quality {
+    top: 90%;
+    right: 25%;
+  }
+
+  .rating {
+    top: 75%;
+    left: 30%;
+  }
+
+  .hero-point span {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: inherit;
+  }
+  .point-img {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 50%;
+  }
+  .star {
+    width: 10rem;
+  }
+
+  .brand {
+    padding: 3.5rem 0;
+  }
+  .brand-selection {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 4.6rem;
+  }
+  .brand-icon:nth-child(2) {
+    justify-self: end;
+  }
+  .brand-icon:last-child {
+    grid-column: span 3;
+    justify-self: center;
+  }
+
+  .content-pd-md {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 34.5em) {
+  .food-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-manage {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .food-content {
+    border: none;
+    background: none;
+  }
+
+  .food-img {
+    width: 100%;
+    height: 40rem;
+  }
+  .food-img-box {
+    width: 85%;
+    height: 40rem;
+    margin: 0 auto;
+  }
+
+  .food-box-layer {
+    width: 85%;
+    height: 40rem;
+    margin: 0 auto;
+    padding: 7rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  /* nav hide */
+
+  .nav-list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 29.5em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header-main,
+  .description {
+    text-align: center;
+  }
+
+  .btn {
+    width: 75%;
+    display: block;
+    padding: 3.5rem 3rem;
+    margin: 0 auto;
+  }
+
+  .brand-icon {
+    width: 15.5rem;
+  }
+
+  .brand-selection {
+    width: 10%;
+  }
+
+  .transport-dp {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0rem;
+    row-gap: 10rem;
+  }
+
+  .benefit-box {
+    width: 80%;
+    height: 50rem;
+    margin: 0 auto;
+  }
+
+  .benefit-img {
+    width: 75%;
+    height: 45rem;
+    margin: 0 auto;
+    position: relative;
+    top: -1.5rem;
+  }
+
+  .benefit-header {
+    text-align: center;
+  }
+
+  .ben-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .star-header {
+    text-align: center;
+    padding-top: 8rem;
+  }
+
+  .box-star-content {
+    flex-direction: column;
+  }
+
+  .star-box {
+    width: 80%;
+    height: 50rem;
+    margin: 0 auto;
+  }
+
+  .star-image {
+    width: 75%;
+    height: 45rem;
+    margin: 0 auto;
+    position: relative;
+    top: -1.5rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .food {
+    padding-top: 5rem;
+  }
+
+  .food-content {
+    background: none;
+    border: none;
+  }
+
+  .food-img {
+    width: 100%;
+    height: 40rem;
+  }
+  .food-img-box {
+    width: 80%;
+    height: 40rem;
+    margin: 0 auto;
+  }
+
+  .food-box-layer {
+    width: 80%;
+    height: 40rem;
+    margin: 0 auto;
+    padding: 7rem;
+  }
+  .product {
+    margin-top: 5rem;
+  }
+
+  .product-header {
+    text-align: center;
+  }
+
+  .product-manage {
+    grid-template-columns: 1fr;
+  }
+
+  .product-box {
+    width: 70%;
+    height: 60rem;
+    margin: 0 auto;
+  }
+
+  .fetcher-heading {
+    font-size: 3.5rem !important;
+  }
+
+  .footer-manage {
+    text-align: center;
+  }
+
+  .footer-box {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-list {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-box {
+    align-items: center;
+    justify-content: center;
+  }
+
+  form {
+    width: 100%;
+    display: block;
+  }
+  .email {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .btn-modify {
+    width: 100%;
+    padding: 2.5rem 3.5rem;
+  }
+}
+
+@media (max-width: 23.5em) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 2.3rem 1.2rem;
+  }
+}

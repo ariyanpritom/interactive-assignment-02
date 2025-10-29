@@ -1,0 +1,407 @@
+/* ************************************************ */
+/* HEADER */
+/* ************************************************ */
+
+.header {
+  background-color: #f3fcf7;
+  height: 63.3rem;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dot {
+  position: relative;
+  color: #06c167;
+}
+
+.dot::after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #06c167;
+  position: absolute;
+  top: 135%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.logo {
+  max-width: 12rem;
+  height: auto;
+}
+
+.menu-icon {
+  width: 5rem;
+  height: auto;
+  display: none;
+}
+
+.list-hover {
+  transition: all 0.3s;
+}
+
+.list-hover:hover {
+  color: #06c167;
+  transform: scale(1.1);
+}
+
+/* ************************************************ */
+/* HERO SECTION */
+/* ************************************************ */
+
+.description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.hero-box {
+  position: relative;
+  justify-self: end;
+}
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+.polca-img {
+  max-width: 100%;
+  width: auto;
+  position: absolute;
+  bottom: -5%;
+  right: -10%;
+}
+
+.hero-point {
+  width: 23rem;
+  height: 5.3rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 99;
+}
+
+.quality {
+  top: 33%;
+  right: -5%;
+}
+
+.rating {
+  top: 45%;
+  left: -18%;
+}
+
+.hero-point span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: inherit;
+}
+.point-img {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+}
+.star {
+  width: 10rem;
+}
+
+/* ************************************************ */
+/* BRAND SECTION */
+/* ************************************************ */
+
+brand-icon {
+  width: 15.5rem;
+}
+
+.brand-selection {
+  width: 50%;
+}
+
+/* ************************************************ */
+/* TRANSPORT SECTION */
+/* ************************************************ */
+.transport-dp {
+  border-top: 0.2rem solid #70707030;
+  border-bottom: 0.2rem solid #70707030;
+  background-color: #fff;
+}
+
+.trans-icon {
+  width: 6.4rem;
+  height: auto;
+  padding: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #f3fcf7;
+}
+
+.trans-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.trans-monitor span {
+  display: block;
+  color: inherit;
+}
+
+.trans-monitor span:first-child {
+  font-size: 1.8rem;
+  font-weight: inherit;
+}
+
+.trans-monitor span:last-child {
+  font-size: 1.4rem;
+  font-weight: 500;
+  opacity: 75%;
+}
+
+/* ************************************************ */
+/* BENEFIT SECTION */
+/* ************************************************ */
+
+.benefit-box {
+  background-color: #f3fafb;
+}
+
+.benefit-header {
+  background-image: url(../img/Polcadot.png);
+  background-repeat: no-repeat;
+  background-position: top 25% left 0%;
+}
+
+.list-ben {
+  flex-direction: column;
+}
+
+.benefit-img {
+  width: 30rem;
+  height: auto;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* ************************************************ */
+/* STARS SECTION */
+/* ************************************************ */
+
+.star-header {
+  background-image: url(../img/Polcadot.png);
+  background-repeat: no-repeat;
+  background-position: top 25% left 0%;
+}
+
+.box-star-content {
+  display: flex;
+}
+.content-star-items {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.content-star-items span:first-child {
+  color: #06c167;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.content-star-items span:last-child {
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 65%;
+}
+
+.star-box {
+  background-color: #f3fafb;
+}
+
+.star-image {
+  max-width: 80%;
+  position: relative;
+  top: 0%;
+  left: 20%;
+}
+
+/* ************************************************ */
+/* FOOD SECTION */
+/* ************************************************ */
+
+.food-content {
+  border: 0.15rem solid #06c167;
+  background-color: #06c167;
+
+  gap: 0.15rem;
+  padding: 0;
+}
+.food-img-box {
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.food-img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.food-img:hover {
+  transform: scale(1.2);
+}
+
+.food-box-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 3rem;
+  padding: 3.5rem;
+  background-color: #f3fcf7;
+  border-collapse: collapse;
+}
+
+.food-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* ************************************************ */
+/* PRODUCT SECTION */
+/* ************************************************ */
+.product-box {
+  height: 44.5rem;
+  border: 0.2rem solid #76767540;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.product-box:hover {
+  transform: translate(0%, -3.5%);
+}
+
+.product-box:first-child {
+  border: 0.2rem solid #06c167;
+}
+.prod-img {
+  max-width: 100%;
+  height: auto;
+}
+.star-icon {
+  max-width: 100%;
+  height: auto;
+}
+.summery-tag {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.price-box {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+.price-box span:first-child {
+  font-weight: 600 !important;
+  color: #767675;
+}
+
+.price-box span:first-child {
+  font-weight: 400;
+}
+
+/* ************************************************ */
+/* FETCHER SECTION */
+/* ************************************************ */
+
+.fetcher-content {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(2, 2, 2, 0.588),
+      rgba(2, 2, 2, 0.588)
+    ),
+    url(./../img/cover-image.png);
+  background-size: cover;
+  background-position: center;
+  padding: 10.5rem;
+  text-align: center;
+}
+.btn-white {
+  color: #fff;
+}
+
+/* ************************************************ */
+/* FOOTER */
+/* ************************************************ */
+
+.footer-box {
+  align-self: center;
+  justify-self: center;
+  padding: 1.5rem;
+  height: 21rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.logo-footer {
+  max-width: 12rem;
+  height: auto;
+}
+.lorem-text {
+  font-size: 1.5rem;
+}
+
+.social-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+
+.social-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-list {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form {
+  display: flex;
+  gap: 1.5rem;
+}
+.email {
+  padding: 1.5rem 2.5rem;
+}
+.email::placeholder {
+  font-size: 1.4rem;
+  color: inherit;
+  font-family: inherit;
+}
+
+.copy-right {
+  font-size: 1.6rem;
+}
